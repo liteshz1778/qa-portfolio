@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Litesh Zadane | QA Automation Engineer</title>
+<meta name="description" content="Senior Test Engineer with 6.5 years in API and UI test automation for payments and financial services. Based in Pune, open to QA automation roles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%85%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f2f4f6;--surface:#fff;--ink:#14213d;--muted:#55627a;--line:#d5dbe3;--pass:#1b7f55;--pass-bg:#dff3e9;--accent:#2b4acb;--bug:#c8402f;--glow:rgba(43,74,203,.10);
+--sans:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1622;--surface:#172033;--ink:#e8edf6;--muted:#9aa8c2;--line:#2a3550;--pass:#5fd39c;--pass-bg:#173a2e;--accent:#8ea2ff;--bug:#ff8a7a;--glow:rgba(142,162,255,.12)}}
+:root[data-theme="dark"]{--bg:#0f1622;--surface:#172033;--ink:#e8edf6;--muted:#9aa8c2;--line:#2a3550;--pass:#5fd39c;--pass-bg:#173a2e;--accent:#8ea2ff;--bug:#ff8a7a;--glow:rgba(142,162,255,.12)}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans);transition:background .3s,color .3s}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:30}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:800;letter-spacing:-.01em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.logo span{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:var(--ink);color:var(--bg);font:500 13px var(--mono)}
+nav{display:flex;align-items:center;gap:4px}
+nav a{padding:6px 12px;border-radius:6px;color:var(--muted);text-decoration:none;font-size:15px;transition:.2s}
+nav a:hover,nav a.on{color:var(--ink);background:var(--glow)}
+#theme{margin-left:8px;width:36px;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:16px}
+.heroBox{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(900px 400px at 85% 0,var(--glow),transparent 70%)}
+.bgart{position:absolute;inset:0;width:100%;height:100%;color:var(--accent);pointer-events:none}
+.bgart .ic{opacity:.22;animation:float 7s ease-in-out infinite}
+.bgart .ic:nth-of-type(2n){animation-duration:9s;animation-delay:-3s}
+.bgart .ic:nth-of-type(3n){animation-duration:11s;animation-delay:-6s}
+@keyframes float{50%{transform:translateY(-14px)}}
+.hero{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding:64px 0 80px}
+.open{display:inline-flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--pass);border-radius:99px;background:var(--pass-bg);color:var(--pass);font-weight:600;font-size:14.5px;margin-bottom:22px}
+.open b{width:9px;height:9px;border-radius:50%;background:var(--pass);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--pass)}100%{box-shadow:0 0 0 10px transparent}}
+h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+.role{font-size:1.3rem;font-weight:600;margin:0 0 14px;min-height:1.6em}
+#type::after{content:"";display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:3px;vertical-align:-3px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{color:var(--muted);max-width:52ch;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--glow)}
+.btn.p{background:var(--ink);color:var(--bg)}
+.btn.p:hover{background:var(--ink);opacity:.9}
+.report{background:var(--surface);border:1px solid var(--line);border-radius:10px;font:400 13.5px/1.5 var(--mono);overflow:hidden;box-shadow:0 20px 50px -25px rgba(20,33,61,.45)}
+.report .h{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.row{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:11px 16px;border-bottom:1px solid var(--line);animation:in .4s both;animation-delay:calc(var(--i)*.18s + .3s)}
+.row i{font-style:normal;color:var(--pass);background:var(--pass-bg);padding:0 8px;border-radius:4px;height:fit-content;font-weight:500}
+.row span{display:block;color:var(--muted);font-size:12.5px}
+.report .f{padding:12px 16px;color:var(--pass);font-weight:500}
+@keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));border-bottom:1px solid var(--line);background:var(--surface)}
+.stats div{padding:26px 24px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font-size:2.3rem;letter-spacing:-.03em;line-height:1.1}
+.stats span{color:var(--muted);font-size:15px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);letter-spacing:-.025em;line-height:1.1;margin:0 0 28px;font-weight:800}
+.skills{margin:0;display:grid;grid-template-columns:200px 1fr;border-top:1px solid var(--line)}
+.skills dt,.skills dd{margin:0;padding:14px 0;border-bottom:1px solid var(--line)}
+.skills dt{font-weight:600}
+.chip{display:inline-block;margin:3px 6px 3px 0;padding:2px 11px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:14.5px;color:var(--ink);transition:.2s}
+.chip:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.approach{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.approach h3,.certs h3{margin:0 0 8px;font-size:1.15rem}
+.approach p{margin:0;color:var(--muted);font-size:16px}
+.tl{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--line)}
+.tl>li{position:relative;padding:0 0 34px}
+.tl>li::before{content:"";position:absolute;left:-33px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.tl h3{margin:0;font-size:1.2rem}
+.when{font:400 13.5px var(--mono);color:var(--muted);margin:2px 0 8px}
+.tl p.d{margin:0 0 8px;color:var(--muted);font-size:15.5px}
+.tl ul{margin:0;padding-left:18px}
+.tl ul li{padding:0 0 4px}
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.certs ul{list-style:none;margin:0;padding:0}
+.certs li{padding:9px 0;border-top:1px solid var(--line);font-size:15.5px}
+.certs a{text-decoration:none;font-weight:500}
+.certs a:hover{text-decoration:underline}
+.edu{margin-top:28px;color:var(--muted);font-size:16px}
+.edu b{color:var(--ink)}
+footer{background:var(--ink);color:var(--bg);padding:56px 0 28px;margin-top:0}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h2{color:var(--bg);margin-bottom:12px;font-size:1.8rem}
+footer h3{margin:0 0 12px;font-size:1rem;opacity:.7;font-weight:600}
+footer p{max-width:44ch;opacity:.8;margin:0 0 18px}
+footer a{color:var(--bg);text-decoration:none;display:block;padding:3px 0;opacity:.9}
+footer a:hover{text-decoration:underline;opacity:1}
+footer .btn{border-color:var(--bg);color:var(--bg);display:inline-block}
+footer .btn.p{background:var(--bg);color:var(--ink)}
+.copy{margin-top:40px;padding-top:20px;border-top:1px solid rgba(128,140,165,.35);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;opacity:.75}
+.copy a{display:inline;padding:0}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:860px){.hero,.approach,.certs,footer .g{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.skills dt{border-bottom:0;padding-bottom:0}nav a:not(.keep){display:none}}
+@media (prefers-reduced-motion:reduce){.row,.bgart .ic,.open b,#type::after{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top"><span>QA</span>Litesh Zadane</a>
+<nav aria-label="Main"><a href="#approach">Approach</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#learning">Certifications</a><a class="keep" href="#contact">Contact</a><button id="theme" aria-label="Toggle light or dark theme">◐</button></nav>
+</div></header>
+
+<div class="heroBox" id="top">
+<svg class="bgart" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<text x="600" y="380" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="210" fill="none" stroke-width="1.5" opacity=".13" letter-spacing="-6">QA ENGINEER</text>
+<g class="ic" transform="translate(90 90)"><circle cx="0" cy="0" r="22"/><path d="M-9 0l6 7 12-14"/></g>
+<g class="ic" transform="translate(1090 110)"><path d="M-14-14l-16 14 16 14M14-14l16 14-16 14M4-20l-8 40"/></g>
+<g class="ic" transform="translate(1010 530)"><ellipse cx="0" cy="4" rx="13" ry="17"/><path d="M-13 0h-12M13 0h12M-12 12l-12 8M12 12l12 8M-8-12l-6-9M8-12l6-9M0-13v34"/></g>
+<g class="ic" transform="translate(120 540)"><rect x="-26" y="-20" width="52" height="40" rx="6"/><path d="M-14-6l8 6-8 6M0 8h14"/></g>
+<g class="ic" transform="translate(560 70)"><circle cx="0" cy="0" r="14"/><path d="M10 10l14 14"/></g>
+<g class="ic" transform="translate(700 590)"><path d="M-20 0l10-14 10 14 10-14 10 14"/></g>
+</svg>
+<div class="wrap"><div class="hero">
+<div>
+<div class="open"><b></b>Open to QA automation roles in Pune</div>
+<h1>Litesh Zadane</h1>
+<p class="role" aria-live="off"><span id="type">QA Automation Engineer</span></p>
+<p class="lead">Senior Test Engineer with 6.5 years testing payments, banking and telecom software. I build API and UI automation that runs in CI and catches defects before release.</p>
+<div class="btns"><a class="btn p" href="mailto:litesh1778.zadane@gmail.com">Email me</a><a class="btn" href="tel:+918788485192">Call +91 8788485192</a><a class="btn" href="https://github.com/liteshz1778" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">Docker Hub</a></div>
+</div>
+<div class="report" role="img" aria-label="Test report summarising five areas of expertise, all passing">
+<div class="h"><span>suite: career</span><span>6.5 yrs, Pune</span></div>
+<div class="row" style="--i:1"><i>PASS</i><div>REST API automation<span>Karate, REST Assured, Postman, Node.js Mocha</span></div></div>
+<div class="row" style="--i:2"><i>PASS</i><div>UI automation<span>Selenium, TestNG, Cucumber BDD, Page Object Model</span></div></div>
+<div class="row" style="--i:3"><i>PASS</i><div>CI/CD and reporting<span>Jenkins, Git, Maven, Allure, Extent</span></div></div>
+<div class="row" style="--i:4"><i>PASS</i><div>Cloud and containers<span>AWS Certified Cloud Practitioner, Docker</span></div></div>
+<div class="row" style="--i:5"><i>PASS</i><div>Payments domain<span>Western Union, Global Payments, HDFC, Axis</span></div></div>
+<div class="f">5 passed, 0 failed</div>
+</div>
+</div></div>
+</div>
+
+<div class="stats"><div><b data-n="6.5" data-d="1">6.5</b><span>years in testing</span></div><div><b data-n="8">8</b><span>certifications</span></div></div>
+
+<main class="wrap">
+<section id="approach">
+<h2 class="rv">How I automate</h2>
+<div class="approach">
+<div class="card rv"><h3>UI, built to scale</h3><p>Selenium WebDriver with Core Java, Page Object Model and TestNG. Data-driven, BDD and hybrid frameworks, with parallel runs across Chrome, Firefox and IE.</p></div>
+<div class="card rv"><h3>APIs in three stacks</h3><p>Java data-driven suites with Allure reports, Karate BDD, and a Node.js Mocha framework. Postman and SoapUI for exploratory and SOAP work, JMeter for load.</p></div>
+<div class="card rv"><h3>Wired into the pipeline</h3><p>Suites triggered from Jenkins, code in Git and GitHub, and Docker containers for isolated test environments (<a href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">my Docker Hub</a>). Logs traced through CloudWatch and Splunk.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="rv">Skills</h2>
+<dl class="skills rv">
+<dt>Test automation</dt><dd>Selenium WebDriver, TestNG, Cucumber (BDD), Page Object Model, Karate, Node.js (Mocha, Chai)</dd>
+<dt>API testing</dt><dd>Postman, SoapUI, REST Assured, JMeter</dd>
+<dt>Languages</dt><dd>Core Java, JavaScript and Node.js, Python, Shell scripting</dd>
+<dt>CI/CD and build</dt><dd>Jenkins, Git, GitHub, Maven</dd>
+<dt>Cloud and containers</dt><dd>AWS (EC2, S3, EBS, EFS, EKS, VPC, IAM, CloudWatch), Docker, Dockerfiles and images</dd>
+<dt>Logging and reporting</dt><dd>Allure, Extent, Mocha Awesome, Splunk, log4j</dd>
+<dt>Databases</dt><dd>SQL Server, Oracle, MySQL</dd>
+<dt>Testing types</dt><dd>Functional, regression, integration, system, UAT, smoke, sanity, compatibility, GUI, API, globalization</dd>
+<dt>Tools</dt><dd>JIRA, Rally, VS Code, Linux and UNIX</dd>
+</dl>
+</section>
+
+<section id="experience">
+<h2 class="rv">Experience</h2>
+<ol class="tl">
+<li class="rv"><h3>Senior Test Engineer, LTIMindTree</h3><div class="when">Apr 2024 to Jan 2026, Pune. Client: Western Union</div>
+<p class="d">Digital payments and money transfer. Projects: Name Standardization, US Tax Remittance, Colombia Key-Based Transactions, Spanish Language Localization.</p>
+<ul><li>Tested Send, Receive, DMA and Make Pay transaction APIs, plus Fee Inquiry, Fee Survey and Lookup APIs, using Postman and Karate BDD.</li><li>Validated Dynamic Country Configuration APIs field by field against the DCC template.</li><li>Ran automated suites from Jenkins pipelines and watched API health in CloudWatch and logs in Splunk.</li></ul></li>
+<li class="rv"><h3>DevOps Engineer Intern, Web Soft IT Solutions</h3><div class="when">Jul 2023 to Jan 2024, Pune</div>
+<ul><li>Provisioned AWS resources and built Docker images for test environments.</li><li>Helped set up Jenkins pipelines and worked in Linux with shell scripting.</li></ul></li>
+<li class="rv"><h3>Test Analyst, Bitwise Solutions</h3><div class="when">Nov 2021 to Jun 2023, Pune. Client: Global Payments</div>
+<p class="d">Payment processing. Projects: Unified Commerce Platform (Dublin enhancements, Decryptor, BNPL Phase 2).</p>
+<ul><li>Automated REST APIs in a Node.js BDD framework, including test data, for transactions, merchant boarding, reporting and currency conversion.</li><li>Ran daily automation and regression suites through Jenkins and logged defects in Rally.</li><li>Gave sprint-end demos to the client and published daily status reports.</li></ul></li>
+<li class="rv"><h3>Test Engineer, QualityKiosk Technologies</h3><div class="when">Dec 2020 to Nov 2021, Mumbai</div>
+<p class="d">Banking. Projects: HDFC AutoFirst Loan Application, Axis Bank Sankalp.</p>
+<ul><li>Wrote Selenium WebDriver scripts with TestNG and Page Object Model.</li><li>Covered functional, regression, integration and smoke testing, with API checks in Postman.</li></ul></li>
+<li class="rv"><h3>Software Test Engineer, Kastham Technologies</h3><div class="when">May 2019 to Dec 2020, Pune</div>
+<p class="d">Telecom and financial services for clients in the USA, UK, Germany and Canada.</p>
+<ul><li>Manual functional and regression testing, defect tracking and fix verification across release cycles.</li></ul></li>
+</ol>
+</section>
+
+<section id="learning">
+<h2 class="rv">Certifications</h2>
+<div class="certs">
+<div class="card rv"><h3>AWS</h3><ul>
+<li><a href="https://www.credly.com/badges/4b4a07da-2f17-4f1e-a7d3-8e8f2d9840f3/public_url" target="_blank" rel="noopener">AWS Certified Cloud Practitioner</a></li></ul></div>
+<div class="card rv"><h3>KodeKloud</h3><ul>
+<li><a href="https://drive.google.com/file/d/1hFJfO7uy8Bmp5AzfwckwV6vWiZSdDafA/view?usp=sharing" target="_blank" rel="noopener">Terraform Basic Training</a></li>
+<li><a href="https://drive.google.com/file/d/1za4R7vW9BiBj8br8CqwAgN-_w2k53ZOo/view?usp=sharing" target="_blank" rel="noopener">Helm for Beginners</a></li>
+<li><a href="https://drive.google.com/file/d/1JxCQ30G57xE5-FO89owgsiDf-6UsOGMl/view?usp=sharing" target="_blank" rel="noopener">Ansible Basic Training</a></li>
+<li><a href="https://drive.google.com/file/d/1VId1SE8SGYMx5INRwm32GpGJWgmzpRpr/view?usp=sharing" target="_blank" rel="noopener">Ansible Advanced Training</a></li></ul></div>
+<div class="card rv"><h3>Udemy</h3><ul>
+<li><a href="https://drive.google.com/file/d/1OXgvT6BqFUJUmI0Ptsx9UCZpzEe6P09r/view?usp=sharing" target="_blank" rel="noopener">Certified Kubernetes Administrator (CKA) with Practice Tests</a></li>
+<li><a href="https://drive.google.com/file/d/1ZDgOKyPGfd_nFa-uc-7gtHqW1usqID0k/view?usp=sharing" target="_blank" rel="noopener">REST API Testing and Automation Using Postman</a></li>
+<li><a href="https://drive.google.com/file/d/16E2eHr2bgScjb9_4tCHXx4Zk4_zFjn68/view?usp=sharing" target="_blank" rel="noopener">REST API Automation With Rest Assured</a></li></ul></div>
+</div>
+<p class="edu rv"><b>Education:</b> Master of Computer Applications (2022) and Bachelor of Computer Science (2019), Savitribai Phule Pune University. <b>Languages:</b> English, Hindi, Marathi.</p>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div class="g">
+<div><h2>Let's talk</h2><p>Hiring for a QA automation role in Pune? Get in touch and I'll share my resume and examples of my framework work.</p><a class="btn p" href="mailto:litesh1778.zadane@gmail.com">Email me</a></div>
+<div><h3>Contact</h3><a href="mailto:litesh1778.zadane@gmail.com">litesh1778.zadane@gmail.com</a><a href="tel:+918788485192">+91 8788485192</a><a href="#top">Pune, Maharashtra, India</a></div>
+<div><h3>Elsewhere</h3><a href="https://github.com/liteshz1778" target="_blank" rel="noopener">GitHub</a><a href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">Docker Hub</a><a href="https://www.credly.com/badges/4b4a07da-2f17-4f1e-a7d3-8e8f2d9840f3/public_url" target="_blank" rel="noopener">AWS badge on Credly</a></div>
+</div>
+<div class="copy"><span>© <span id="yr">2026</span> Litesh Zadane. QA Automation Engineer.</span><a href="#top">Back to top</a></div>
+</div></footer>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches,root=document.documentElement;
+try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t)}catch(e){}
+$('#theme').onclick=function(){var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),n=cur==='dark'?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}};
+$('#yr').textContent=new Date().getFullYear();
+$$('.skills dd').forEach(function(d){d.innerHTML=d.textContent.split(/,\s*(?![^()]*\))/).map(function(s){return '<span class="chip">'+s.trim()+'</span>'}).join('')});
+var bar=$('#bar');addEventListener('scroll',function(){var h=root.scrollHeight-innerHeight;bar.style.width=(h>0?scrollY/h*100:0)+'%'},{passive:true});
+var words=['QA Automation Engineer','API Test Engineer','Selenium and Karate specialist','Payments QA Specialist'],wi=0,ci=0,del=false,el=$('#type');
+function tick(){var w=words[wi];ci+=del?-1:1;el.textContent=w.slice(0,ci);var d=del?35:75;if(!del&&ci===w.length){del=true;d=1600}else if(del&&ci===0){del=false;wi=(wi+1)%words.length;d=350}setTimeout(tick,d)}
+if(!rm){el.textContent='';setTimeout(tick,600)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+$$('.rv').forEach(function(x){io.observe(x)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var n=parseFloat(e.target.dataset.n),dp=+e.target.dataset.d||0;if(rm){return}var s=null;function f(ts){s=s||ts;var p=Math.min((ts-s)/1200,1);e.target.textContent=(n*p).toFixed(dp);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})},{threshold:.6});
+$$('.stats b').forEach(function(b){co.observe(b)});
+var links=$$('nav a[href^="#"]'),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+$$('section[id],footer[id]').forEach(function(s){so.observe(s)});
+})();
+</script>
+</body>
+</html>
