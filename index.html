@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Litesh Zadane | QA Automation Engineer</title>
-<meta name="description" content="Senior Test Engineer with 6.5 years in API and UI test automation for payments and financial services. Based in Pune, open to QA automation roles.">
+<meta name="description" content="Senior Test Engineer with 6.5 years in API and UI test automation for payments and financial services. Based in Pune, open to QA automation roles in Pune and remote.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%85%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -104,28 +104,68 @@ footer .btn.p{background:var(--bg);color:var(--ink)}
 .rv.in{opacity:1;transform:none}
 @media (max-width:860px){.hero,.approach,.certs,footer .g{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.skills dt{border-bottom:0;padding-bottom:0}nav a:not(.keep){display:none}}
 @media (prefers-reduced-motion:reduce){.row,.bgart .ic,.open b,#type::after{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+body{background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:28px 28px}
+.bgart .flow{stroke-dasharray:6 10;opacity:.35;animation:dash 1.2s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-16}}
+.layers{position:relative;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--surface),var(--bg));padding:44px 0 36px}
+.layers h2{margin-bottom:6px}
+.layers p.sub{color:var(--muted);margin:0 0 10px;max-width:60ch}
+.layers svg{width:100%;height:auto;display:block}
+.layers rect.n{fill:var(--surface);stroke:var(--accent);stroke-width:2}
+.layers text{fill:var(--ink);font-family:var(--sans);font-weight:600;font-size:19px}
+.layers text.s{fill:var(--muted);font-weight:400;font-size:13.5px}
+.layers text.k{fill:var(--accent);font-family:var(--mono);font-size:12.5px;font-weight:500}
+.layers .flow{stroke:var(--accent);stroke-width:2.5;stroke-dasharray:6 8;animation:dash 1s linear infinite;fill:none}
+.tools{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:12px;margin-bottom:36px}
+.tool{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:14px;font-weight:500;text-align:center;transition:transform .2s,border-color .2s}
+.tool:hover{transform:translateY(-3px);border-color:var(--accent)}
+.lg{width:40px;height:40px;display:grid;place-items:center;border-radius:8px;background:#fff;padding:5px}
+.lg img{width:100%;height:100%;object-fit:contain}
+.lg.m{color:#fff;font:500 14px var(--mono);padding:0}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.proj .card{display:flex;flex-direction:column}
+.proj h3{margin:0 0 8px;font-size:1.15rem}
+.proj p{margin:0 0 14px;color:var(--muted);font-size:15.5px;flex:1}
+.tag{display:inline-block;margin:0 6px 6px 0;padding:1px 10px;border-radius:99px;background:var(--glow);color:var(--accent);font:500 12.5px var(--mono)}
+.proj a.go{font-weight:600;text-decoration:none;margin-top:8px}
+.proj a.go:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){.bgart .flow,.layers .flow{animation:none}}
+
+.edu2{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:20px}
+.edu2 h3{margin:0 0 8px;font-size:1.15rem}
+.edu2 ul{list-style:none;margin:0;padding:0}
+.edu2 li{padding:10px 0;border-top:1px solid var(--line)}
+.edu2 li b{display:block;font-weight:600}
+.edu2 li span{color:var(--muted);font-size:15px}
+.clock{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;display:flex;gap:14px;padding:8px 14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;font:400 12.5px var(--mono);color:var(--muted);box-shadow:0 8px 24px -12px rgba(20,33,61,.5)}
+.clock b{color:var(--ink);font-weight:500}
+@media (max-width:860px){.edu2{grid-template-columns:1fr}.clock{left:10px;gap:10px;padding:6px 10px;font-size:11.5px}}
 </style>
 </head>
 <body>
 <div id="bar"></div>
 <header class="top"><div class="wrap">
 <a class="logo" href="#top"><span>QA</span>Litesh Zadane</a>
-<nav aria-label="Main"><a href="#approach">Approach</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#learning">Certifications</a><a class="keep" href="#contact">Contact</a><button id="theme" aria-label="Toggle light or dark theme">◐</button></nav>
+<nav aria-label="Main"><a href="#approach">Approach</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Frameworks</a><a href="#learning">Certifications</a><a class="keep" href="#contact">Contact</a><button id="theme" aria-label="Toggle light or dark theme">◐</button></nav>
 </div></header>
 
 <div class="heroBox" id="top">
 <svg class="bgart" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-<text x="600" y="380" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="210" fill="none" stroke-width="1.5" opacity=".13" letter-spacing="-6">QA ENGINEER</text>
+<text x="600" y="400" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="150" fill="none" stroke-width="1.5" opacity=".14" textLength="1100" lengthAdjust="spacingAndGlyphs">QA AUTOMATION</text>
 <g class="ic" transform="translate(90 90)"><circle cx="0" cy="0" r="22"/><path d="M-9 0l6 7 12-14"/></g>
 <g class="ic" transform="translate(1090 110)"><path d="M-14-14l-16 14 16 14M14-14l16 14-16 14M4-20l-8 40"/></g>
 <g class="ic" transform="translate(1010 530)"><ellipse cx="0" cy="4" rx="13" ry="17"/><path d="M-13 0h-12M13 0h12M-12 12l-12 8M12 12l12 8M-8-12l-6-9M8-12l6-9M0-13v34"/></g>
 <g class="ic" transform="translate(120 540)"><rect x="-26" y="-20" width="52" height="40" rx="6"/><path d="M-14-6l8 6-8 6M0 8h14"/></g>
 <g class="ic" transform="translate(560 70)"><circle cx="0" cy="0" r="14"/><path d="M10 10l14 14"/></g>
 <g class="ic" transform="translate(700 590)"><path d="M-20 0l10-14 10 14 10-14 10 14"/></g>
+<path class="flow" d="M395 580H830"/>
+<g class="ic" transform="translate(340 580)"><rect x="-42" y="-28" width="84" height="56" rx="6"/><path d="M-42-14h84M-30-21h.1M-22-21h.1M-14-21h.1"/><path d="M-26 0h30M-26 12h50"/></g>
+<g class="ic" transform="translate(880 580)"><rect x="-30" y="-30" width="60" height="24" rx="5"/><rect x="-30" y="2" width="60" height="24" rx="5"/><path d="M-20-18h.1M-20 14h.1M0-18h16M0 14h16"/></g>
 </svg>
 <div class="wrap"><div class="hero">
 <div>
-<div class="open"><b></b>Open to QA automation roles in Pune</div>
+<div class="open"><b></b>Open to QA automation roles in Pune and remote</div>
 <h1>Litesh Zadane</h1>
 <p class="role" aria-live="off"><span id="type">QA Automation Engineer</span></p>
 <p class="lead">Senior Test Engineer with 6.5 years testing payments, banking and telecom software. I build API and UI automation that runs in CI and catches defects before release.</p>
@@ -145,6 +185,18 @@ footer .btn.p{background:var(--bg);color:var(--ink)}
 
 <div class="stats"><div><b data-n="6.5" data-d="1">6.5</b><span>years in testing</span></div><div><b data-n="8">8</b><span>certifications</span></div></div>
 
+<div class="layers"><div class="wrap">
+<h2 class="rv">Automation from the browser to the database</h2>
+<p class="sub rv">I test every layer of an application: what users click, what the APIs return and what ends up stored.</p>
+<svg viewBox="0 0 1000 190" role="img" aria-label="Flow from UI layer to API layer to services to database, with the automation tools used at each layer">
+<path class="flow" d="M215 95H290M465 95H540M715 95H790"/>
+<g><rect class="n" x="40" y="45" width="175" height="100" rx="10"/><text x="60" y="80">UI layer</text><text class="s" x="60" y="102">Selenium, TestNG</text><text class="s" x="60" y="121">Cucumber BDD</text></g>
+<g><rect class="n" x="290" y="45" width="175" height="100" rx="10"/><text x="310" y="80">API layer</text><text class="s" x="310" y="102">Karate, REST Assured</text><text class="s" x="310" y="121">Postman, Mocha</text></g>
+<g><rect class="n" x="540" y="45" width="175" height="100" rx="10"/><text x="560" y="80">Pipeline</text><text class="s" x="560" y="102">Jenkins, Docker</text><text class="s" x="560" y="121">CloudWatch, Splunk</text></g>
+<g><rect class="n" x="790" y="45" width="175" height="100" rx="10"/><text x="810" y="80">Database</text><text class="s" x="810" y="102">SQL Server, Oracle</text><text class="s" x="810" y="121">MySQL</text></g>
+<text class="k" x="252" y="86" text-anchor="middle">200</text><text class="k" x="502" y="86" text-anchor="middle">CI</text><text class="k" x="752" y="86" text-anchor="middle">SQL</text>
+</svg>
+</div></div>
 <main class="wrap">
 <section id="approach">
 <h2 class="rv">How I automate</h2>
@@ -156,7 +208,8 @@ footer .btn.p{background:var(--bg);color:var(--ink)}
 </section>
 
 <section id="skills">
-<h2 class="rv">Skills</h2>
+<h2 class="rv">Tools and languages</h2>
+<div class="tools rv" id="tools"></div>
 <dl class="skills rv">
 <dt>Test automation</dt><dd>Selenium WebDriver, TestNG, Cucumber (BDD), Page Object Model, Karate, Node.js (Mocha, Chai)</dd>
 <dt>API testing</dt><dd>Postman, SoapUI, REST Assured, JMeter</dd>
@@ -190,8 +243,20 @@ footer .btn.p{background:var(--bg);color:var(--ink)}
 </ol>
 </section>
 
+<section id="projects">
+<h2 class="rv">Automation frameworks and delivery work</h2>
+<div class="proj">
+<div class="card rv"><h3>UI Automation Framework: Selenium and Cucumber BDD</h3><p>Automates the NopCommerce demo store with Selenium WebDriver, Core Java and a BDD Cucumber framework. The repo includes screenshots as test evidence.</p><div><span class="tag">Selenium</span><span class="tag">Cucumber</span><span class="tag">Java</span></div><a class="go" href="https://github.com/liteshz1778/BDD_Cucumber_Automation_Project" target="_blank" rel="noopener">View on GitHub</a></div>
+<div class="card rv"><h3>UI Automation Framework: Selenium, TestNG and Data-Driven Testing</h3><p>Automates the OrangeHRM website with Selenium WebDriver, Core Java, TestNG and a data-driven framework, with screenshots as evidence.</p><div><span class="tag">Selenium</span><span class="tag">TestNG</span><span class="tag">Data-driven</span></div><a class="go" href="https://github.com/liteshz1778/UI_Automation" target="_blank" rel="noopener">View on GitHub</a></div>
+<div class="card rv"><h3>API Automation Framework: REST Assured and TestNG</h3><p>REST API tests built with REST Assured, Core Java and TestNG, driven by external test data. Logs and reports are included in the repo.</p><div><span class="tag">REST Assured</span><span class="tag">TestNG</span><span class="tag">Java</span></div><a class="go" href="https://github.com/liteshz1778/RestAssuredAutomation" target="_blank" rel="noopener">View on GitHub</a></div>
+<div class="card rv"><h3>API Automation Framework: Karate BDD</h3><p>Booking API tests written in the Karate framework with Maven and a central karate-config.js for environment settings.</p><div><span class="tag">Karate</span><span class="tag">Maven</span><span class="tag">API</span></div><a class="go" href="https://github.com/liteshz1778/KarateFramework_BookingAPITest" target="_blank" rel="noopener">View on GitHub</a></div>
+<div class="card rv"><h3>CI/CD Pipeline Automation: Jenkins and Docker</h3><p>Jenkinsfiles that build Docker images, push them to Docker Hub and deploy containers, using dynamic declarative pipelines.</p><div><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div><a class="go" href="https://github.com/liteshz1778/docker_jenkins_demo_pipeline" target="_blank" rel="noopener">View on GitHub</a></div>
+<div class="card rv"><h3>Onboarding Assessment: UI and REST API Automation</h3><p>Completed the UI and REST API automation assignment during onboarding for the Western Union project at LTIMindtree.</p><div><span class="tag">UI</span><span class="tag">REST API</span><span class="tag">Onboarding</span></div><a class="go" href="https://github.com/liteshz1778/LTIMAssignment1-3" target="_blank" rel="noopener">View on GitHub</a></div>
+</div>
+</section>
+
 <section id="learning">
-<h2 class="rv">Certifications</h2>
+<h2 class="rv">Certifications and education</h2>
 <div class="certs">
 <div class="card rv"><h3>AWS</h3><ul>
 <li><a href="https://www.credly.com/badges/4b4a07da-2f17-4f1e-a7d3-8e8f2d9840f3/public_url" target="_blank" rel="noopener">AWS Certified Cloud Practitioner</a></li></ul></div>
@@ -205,19 +270,25 @@ footer .btn.p{background:var(--bg);color:var(--ink)}
 <li><a href="https://drive.google.com/file/d/1ZDgOKyPGfd_nFa-uc-7gtHqW1usqID0k/view?usp=sharing" target="_blank" rel="noopener">REST API Testing and Automation Using Postman</a></li>
 <li><a href="https://drive.google.com/file/d/16E2eHr2bgScjb9_4tCHXx4Zk4_zFjn68/view?usp=sharing" target="_blank" rel="noopener">REST API Automation With Rest Assured</a></li></ul></div>
 </div>
-<p class="edu rv"><b>Education:</b> Master of Computer Applications (2022) and Bachelor of Computer Science (2019), Savitribai Phule Pune University. <b>Languages:</b> English, Hindi, Marathi.</p>
+<div class="edu2">
+<div class="card rv"><h3>Education</h3><ul>
+<li><b>Master of Computer Applications (MCA)</b><span>Savitribai Phule Pune University, Pune. April 2022</span></li>
+<li><b>Bachelor of Computer Science (BCS)</b><span>Savitribai Phule Pune University, Pune. April 2019</span></li></ul></div>
+<div class="card rv"><h3>Languages</h3><div><span class="chip">English</span><span class="chip">Hindi</span><span class="chip">Marathi</span></div></div>
+</div>
 </section>
 </main>
 
 <footer id="contact"><div class="wrap">
 <div class="g">
-<div><h2>Let's talk</h2><p>Hiring for a QA automation role in Pune? Get in touch and I'll share my resume and examples of my framework work.</p><a class="btn p" href="mailto:litesh1778.zadane@gmail.com">Email me</a></div>
+<div><h2>Let's talk</h2><p>Hiring for a QA automation role in Pune or remote? Get in touch and I'll share my resume and examples of my framework work.</p><a class="btn p" href="mailto:litesh1778.zadane@gmail.com">Email me</a></div>
 <div><h3>Contact</h3><a href="mailto:litesh1778.zadane@gmail.com">litesh1778.zadane@gmail.com</a><a href="tel:+918788485192">+91 8788485192</a><a href="#top">Pune, Maharashtra, India</a></div>
 <div><h3>Elsewhere</h3><a href="https://github.com/liteshz1778" target="_blank" rel="noopener">GitHub</a><a href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">Docker Hub</a><a href="https://www.credly.com/badges/4b4a07da-2f17-4f1e-a7d3-8e8f2d9840f3/public_url" target="_blank" rel="noopener">AWS badge on Credly</a></div>
 </div>
 <div class="copy"><span>© <span id="yr">2026</span> Litesh Zadane. QA Automation Engineer.</span><a href="#top">Back to top</a></div>
 </div></footer>
 
+<div class="clock" role="group" aria-label="Current UTC time and time spent on this page"><span>UTC <b id="utc">00:00:00</b></span><span>Session <b id="ses">00:00:00</b></span></div>
 <script>
 (function(){
 var $=function(s){return document.querySelector(s)},$$=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
@@ -236,6 +307,16 @@ var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isInte
 $$('.stats b').forEach(function(b){co.observe(b)});
 var links=$$('nav a[href^="#"]'),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
 $$('section[id],footer[id]').forEach(function(s){so.observe(s)});
+var T=[['Selenium','selenium'],['Java','java'],['TestNG',0,'TN'],['Cucumber','cucumber'],['Karate',0,'Ka'],['REST Assured',0,'RA'],['Postman','postman'],['JMeter',0,'JM'],['Node.js','nodejs'],['JavaScript','javascript'],['Mocha','mocha'],['Python','python'],['Bash','bash'],['Jenkins','jenkins'],['Git','git'],['GitHub','github'],['Maven','maven'],['Docker','docker'],['AWS','amazonwebservices'],['Linux','linux'],['MySQL','mysql'],['Oracle','oracle'],['JIRA','jira'],['VS Code','vscode'],['Splunk',0,'Sp'],['Allure',0,'Al']];
+var tb=$('#tools');
+function mono(n,m){var e=document.createElement('span'),h=0;for(var i=0;i<n.length;i++)h=(h*31+n.charCodeAt(i))%360;e.className='lg m';e.style.background='hsl('+h+',45%,38%)';e.textContent=m||n.slice(0,2);return e}
+T.forEach(function(t){var d=document.createElement('div'),w=document.createElement('span');d.className='tool';w.className='lg';
+if(t[1]){var im=new Image();im.alt='';im.loading='lazy';im.src='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/'+t[1]+'/'+t[1]+'-original.svg';im.onerror=function(){w.replaceWith(mono(t[0],t[2]))};w.appendChild(im)}else{w=mono(t[0],t[2])}
+d.appendChild(w);d.appendChild(document.createTextNode(t[0]));tb.appendChild(d)});
+function p2(n){return n<10?'0'+n:''+n}
+var t0=Date.now();try{var st=+sessionStorage.getItem('t0');if(st>0&&st<=t0)t0=st;else sessionStorage.setItem('t0',t0)}catch(e){}
+function clk(){var n=new Date(),s=Math.max(0,Math.floor((Date.now()-t0)/1000));$('#utc').textContent=p2(n.getUTCHours())+':'+p2(n.getUTCMinutes())+':'+p2(n.getUTCSeconds());$('#ses').textContent=p2(Math.floor(s/3600))+':'+p2(Math.floor(s%3600/60))+':'+p2(s%60)}
+clk();setInterval(clk,1000);
 })();
 </script>
 </body>
