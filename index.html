@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Litesh Zadane | QA Automation Engineer</title>
-<meta name="description" content="Senior Test Engineer with 6.5 years in API and UI test automation for payments and financial services. Based in Pune, open to QA automation roles in Pune and remote.">
+<meta name="description" content="Senior Test Engineer with 6.5 years in API and UI test automation for payments and financial services. Based in Pune, open to QA automation roles in Pune &amp; Remote.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%85%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -100,7 +100,7 @@ footer .btn{border-color:var(--bg);color:var(--bg);display:inline-block}
 footer .btn.p{background:var(--bg);color:var(--ink)}
 .copy{margin-top:40px;padding-top:20px;border-top:1px solid rgba(128,140,165,.35);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;opacity:.75}
 .copy a{display:inline;padding:0}
-.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv{opacity:0;transform:translateY(var(--ty,20px));transition:opacity .6s,transform .6s}
 .rv.in{opacity:1;transform:none}
 @media (max-width:860px){.hero,.approach,.certs,footer .g{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.skills dt{border-bottom:0;padding-bottom:0}nav a:not(.keep){display:none}}
 @media (prefers-reduced-motion:reduce){.row,.bgart .ic,.open b,#type::after{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -141,6 +141,34 @@ body{background-image:radial-gradient(var(--line) 1px,transparent 1px);backgroun
 .clock{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;display:flex;gap:14px;padding:8px 14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;font:400 12.5px var(--mono);color:var(--muted);box-shadow:0 8px 24px -12px rgba(20,33,61,.5)}
 .clock b{color:var(--ink);font-weight:500}
 @media (max-width:860px){.edu2{grid-template-columns:1fr}.clock{left:10px;gap:10px;padding:6px 10px;font-size:11.5px}}
+
+.jump{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--ink);color:var(--bg);cursor:pointer;display:grid;place-items:center;box-shadow:0 8px 24px -10px rgba(20,33,61,.6);transition:transform .25s}
+.jump:hover{transform:translateY(-3px)}
+.jump svg{transition:transform .45s}
+.jump.up svg{transform:rotate(180deg)}
+.jump:not(.up) svg{animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(4px)}}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:40;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:10px;font-size:15px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;max-width:92vw;box-shadow:0 12px 30px -12px rgba(0,0,0,.6)}
+.toast[hidden]{display:none}
+.toast a,.toast button{color:var(--bg);font:600 15px var(--sans);background:none;border:0;border-bottom:1.5px solid;padding:0;cursor:pointer;text-decoration:none}
+@media (prefers-reduced-motion:reduce){.jump svg{animation:none}}
+
+.stats b{font-size:3rem;font-variant-numeric:tabular-nums;display:flex}
+.dg{display:inline-block;height:1em;overflow:hidden;line-height:1}
+.col{display:block;transition:transform 1.5s cubic-bezier(.16,.84,.3,1)}
+.col span{display:block;height:1em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.stats span.l{display:block;opacity:0;transform:translateY(10px);transition:opacity .6s .6s,transform .6s .6s}
+.stats .go span.l{opacity:1;transform:none}
+.vis{display:flex;gap:6px;margin-top:16px;align-items:center}
+.vis u{display:block;text-decoration:none}
+.yrs u{flex:1;height:7px;border-radius:4px;background:var(--line);position:relative;overflow:hidden}
+.yrs u::after{content:"";position:absolute;inset:0;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s;transition-delay:calc(var(--i)*.16s + .3s)}
+.go .yrs u::after,.go.yrs u::after{transform:scaleX(var(--f,1))}
+.cts u{width:14px;height:14px;border-radius:50%;background:var(--pass);transform:scale(0);transition:transform .45s cubic-bezier(.3,1.6,.5,1);transition-delay:calc(var(--i)*.13s + .3s)}
+.go .cts u{transform:scale(1)}
+.cts u:not(:last-child){margin-right:0}
+@media (prefers-reduced-motion:reduce){.col,.stats span.l,.yrs u::after,.cts u{transition:none}.stats span.l{opacity:1;transform:none}.yrs u::after{transform:scaleX(var(--f,1))}.cts u{transform:scale(1)}}
 </style>
 </head>
 <body>
@@ -152,7 +180,7 @@ body{background-image:radial-gradient(var(--line) 1px,transparent 1px);backgroun
 
 <div class="heroBox" id="top">
 <svg class="bgart" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-<text x="600" y="400" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="150" fill="none" stroke-width="1.5" opacity=".14" textLength="1100" lengthAdjust="spacingAndGlyphs">QA AUTOMATION</text>
+<text x="600" y="400" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="104" fill="none" stroke-width="1.5" opacity=".14" textLength="1120" lengthAdjust="spacingAndGlyphs">QA AUTOMATION ENGINEER</text>
 <g class="ic" transform="translate(90 90)"><circle cx="0" cy="0" r="22"/><path d="M-9 0l6 7 12-14"/></g>
 <g class="ic" transform="translate(1090 110)"><path d="M-14-14l-16 14 16 14M14-14l16 14-16 14M4-20l-8 40"/></g>
 <g class="ic" transform="translate(1010 530)"><ellipse cx="0" cy="4" rx="13" ry="17"/><path d="M-13 0h-12M13 0h12M-12 12l-12 8M12 12l12 8M-8-12l-6-9M8-12l6-9M0-13v34"/></g>
@@ -165,11 +193,11 @@ body{background-image:radial-gradient(var(--line) 1px,transparent 1px);backgroun
 </svg>
 <div class="wrap"><div class="hero">
 <div>
-<div class="open"><b></b>Open to QA automation roles in Pune and remote</div>
+<div class="open"><b></b>Open to QA automation roles in Pune &amp; Remote</div>
 <h1>Litesh Zadane</h1>
 <p class="role" aria-live="off"><span id="type">QA Automation Engineer</span></p>
 <p class="lead">Senior Test Engineer with 6.5 years testing payments, banking and telecom software. I build API and UI automation that runs in CI and catches defects before release.</p>
-<div class="btns"><a class="btn p" href="mailto:litesh1778.zadane@gmail.com">Email me</a><a class="btn" href="tel:+918788485192">Call +91 8788485192</a><a class="btn" href="https://github.com/liteshz1778" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">Docker Hub</a></div>
+<div class="btns"><a class="btn p" href="mailto:litesh1778.zadane@gmail.com?subject=Opportunity%3A%20QA%20Automation%20Engineer%20role&amp;body=Hi%20Litesh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20QA%20automation%20role.%0A%0ARegards%2C">Email me</a><a class="btn" href="tel:+918788485192">Call +91 8788485192</a><a class="btn" href="https://github.com/liteshz1778" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">Docker Hub</a></div>
 </div>
 <div class="report" role="img" aria-label="Test report summarising five areas of expertise, all passing">
 <div class="h"><span>suite: career</span><span>6.5 yrs, Pune</span></div>
@@ -183,7 +211,7 @@ body{background-image:radial-gradient(var(--line) 1px,transparent 1px);backgroun
 </div></div>
 </div>
 
-<div class="stats"><div><b data-n="6.5" data-d="1">6.5</b><span>years in testing</span></div><div><b data-n="8">8</b><span>certifications</span></div></div>
+<div class="stats"><div><b class="odo" data-n="6.5">6.5</b><span class="l">years in testing</span><i class="vis yrs" data-k="7" data-half="1" aria-hidden="true"></i></div><div><b class="odo" data-n="8">8</b><span class="l">certifications</span><i class="vis cts" data-k="8" aria-hidden="true"></i></div></div>
 
 <div class="layers"><div class="wrap">
 <h2 class="rv">Automation from the browser to the database</h2>
@@ -281,13 +309,15 @@ body{background-image:radial-gradient(var(--line) 1px,transparent 1px);backgroun
 
 <footer id="contact"><div class="wrap">
 <div class="g">
-<div><h2>Let's talk</h2><p>Hiring for a QA automation role in Pune or remote? Get in touch and I'll share my resume and examples of my framework work.</p><a class="btn p" href="mailto:litesh1778.zadane@gmail.com">Email me</a></div>
-<div><h3>Contact</h3><a href="mailto:litesh1778.zadane@gmail.com">litesh1778.zadane@gmail.com</a><a href="tel:+918788485192">+91 8788485192</a><a href="#top">Pune, Maharashtra, India</a></div>
+<div><h2>Let's talk</h2><p>Hiring for a QA automation role in Pune &amp; Remote? Get in touch and I'll share my resume and examples of my framework work.</p><a class="btn p" href="mailto:litesh1778.zadane@gmail.com?subject=Opportunity%3A%20QA%20Automation%20Engineer%20role&amp;body=Hi%20Litesh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20QA%20automation%20role.%0A%0ARegards%2C">Email me</a></div>
+<div><h3>Contact</h3><a href="mailto:litesh1778.zadane@gmail.com?subject=Opportunity%3A%20QA%20Automation%20Engineer%20role&amp;body=Hi%20Litesh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20QA%20automation%20role.%0A%0ARegards%2C">litesh1778.zadane@gmail.com</a><a href="tel:+918788485192">+91 8788485192</a><a href="#top">Pune, Maharashtra, India</a></div>
 <div><h3>Elsewhere</h3><a href="https://github.com/liteshz1778" target="_blank" rel="noopener">GitHub</a><a href="https://hub.docker.com/u/liteshz" target="_blank" rel="noopener">Docker Hub</a><a href="https://www.credly.com/badges/4b4a07da-2f17-4f1e-a7d3-8e8f2d9840f3/public_url" target="_blank" rel="noopener">AWS badge on Credly</a></div>
 </div>
 <div class="copy"><span>© <span id="yr">2026</span> Litesh Zadane. QA Automation Engineer.</span><a href="#top">Back to top</a></div>
 </div></footer>
 
+<button id="jump" class="jump" aria-label="Scroll to bottom"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+<div id="toast" class="toast" role="status" hidden><span>No mail app opened.</span><a id="gm" href="#" target="_blank" rel="noopener">Compose in Gmail</a><button id="cp" type="button">Copy address</button></div>
 <div class="clock" role="group" aria-label="Current UTC time and time spent on this page"><span>UTC <b id="utc">00:00:00</b></span><span>Session <b id="ses">00:00:00</b></span></div>
 <script>
 (function(){
@@ -301,10 +331,13 @@ var bar=$('#bar');addEventListener('scroll',function(){var h=root.scrollHeight-i
 var words=['QA Automation Engineer','API Test Engineer','Selenium and Karate specialist','Payments QA Specialist'],wi=0,ci=0,del=false,el=$('#type');
 function tick(){var w=words[wi];ci+=del?-1:1;el.textContent=w.slice(0,ci);var d=del?35:75;if(!del&&ci===w.length){del=true;d=1600}else if(del&&ci===0){del=false;wi=(wi+1)%words.length;d=350}setTimeout(tick,d)}
 if(!rm){el.textContent='';setTimeout(tick,600)}
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in')}else{e.target.classList.remove('in');e.target.style.setProperty('--ty',e.boundingClientRect.top<0?'-24px':'24px')}})},{threshold:.06});
 $$('.rv').forEach(function(x){io.observe(x)});
-var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var n=parseFloat(e.target.dataset.n),dp=+e.target.dataset.d||0;if(rm){return}var s=null;function f(ts){s=s||ts;var p=Math.min((ts-s)/1200,1);e.target.textContent=(n*p).toFixed(dp);if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})},{threshold:.6});
-$$('.stats b').forEach(function(b){co.observe(b)});
+function odo(el){var f=el.dataset.n,sr=document.createElement('span');sr.className='sr';sr.textContent=f;el.textContent='';el.appendChild(sr);var ds=[];f.split('').forEach(function(c){var w=document.createElement('span');w.setAttribute('aria-hidden','true');if(c==='.'){w.textContent='.'}else{w.className='dg';var col=document.createElement('span');col.className='col';for(var i=0;i<=9;i++){var d=document.createElement('span');d.textContent=i;col.appendChild(d)}w.appendChild(col);ds.push([col,+c])}el.appendChild(w)});el._ds=ds}
+var sd=$$('.stats>div');
+sd.forEach(function(d){odo(d.querySelector('b'));var v=d.querySelector('.vis'),k=+v.dataset.k;for(var i=0;i<k;i++){var u=document.createElement('u');u.style.setProperty('--i',i);if(v.dataset.half&&i===k-1)u.style.setProperty('--f',.5);v.appendChild(u)}});
+var sio=new IntersectionObserver(function(es){es.forEach(function(e){var d=e.target,on=e.isIntersecting;d.classList.toggle('go',on);d.querySelector('b')._ds.forEach(function(x,i){x[0].style.transitionDelay=on?(.15+i*.18)+'s':'0s';x[0].style.transform=(on||rm)?'translateY(-'+(x[1]*10)+'%)':'translateY(0)'})})},{threshold:.5});
+sd.forEach(function(d){sio.observe(d)});
 var links=$$('nav a[href^="#"]'),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
 $$('section[id],footer[id]').forEach(function(s){so.observe(s)});
 var T=[['Selenium','selenium'],['Java','java'],['TestNG',0,'TN'],['Cucumber','cucumber'],['Karate',0,'Ka'],['REST Assured',0,'RA'],['Postman','postman'],['JMeter',0,'JM'],['Node.js','nodejs'],['JavaScript','javascript'],['Mocha','mocha'],['Python','python'],['Bash','bash'],['Jenkins','jenkins'],['Git','git'],['GitHub','github'],['Maven','maven'],['Docker','docker'],['AWS','amazonwebservices'],['Linux','linux'],['MySQL','mysql'],['Oracle','oracle'],['JIRA','jira'],['VS Code','vscode'],['Splunk',0,'Sp'],['Allure',0,'Al']];
@@ -317,6 +350,14 @@ function p2(n){return n<10?'0'+n:''+n}
 var t0=Date.now();try{var st=+sessionStorage.getItem('t0');if(st>0&&st<=t0)t0=st;else sessionStorage.setItem('t0',t0)}catch(e){}
 function clk(){var n=new Date(),s=Math.max(0,Math.floor((Date.now()-t0)/1000));$('#utc').textContent=p2(n.getUTCHours())+':'+p2(n.getUTCMinutes())+':'+p2(n.getUTCSeconds());$('#ses').textContent=p2(Math.floor(s/3600))+':'+p2(Math.floor(s%3600/60))+':'+p2(s%60)}
 clk();setInterval(clk,1000);
+var art=$('.bgart'),jb=$('#jump');
+function sc(){var y=scrollY;if(!rm&&art)art.style.transform='translateY('+Math.min(y*.25,180)+'px)';var up=y>300;jb.classList.toggle('up',up);jb.setAttribute('aria-label',up?'Scroll to top':'Scroll to bottom')}
+addEventListener('scroll',sc,{passive:true});sc();
+jb.onclick=function(){var up=jb.classList.contains('up');scrollTo({top:up?0:document.documentElement.scrollHeight,behavior:rm?'auto':'smooth'})};
+var MAIL='litesh1778.zadane@gmail.com',toast=$('#toast'),tt;
+function showToast(){$('#gm').href='https://mail.google.com/mail/?view=cm&fs=1&to='+MAIL+'&su='+encodeURIComponent('Opportunity: QA Automation Engineer role');$('#cp').textContent='Copy address';toast.hidden=false;clearTimeout(tt);tt=setTimeout(function(){toast.hidden=true},9000)}
+$$('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){if(document.hasFocus()&&!document.hidden)showToast()},1000)})});
+$('#cp').onclick=function(){var b=this;try{navigator.clipboard.writeText(MAIL).then(function(){b.textContent='Copied'})}catch(e){b.textContent=MAIL}};
 })();
 </script>
 </body>
