@@ -1,2 +1,1 @@
-# qa-portfolio
-Litesh Zadane — QA  Portfolio
+# Litesh Zadane — QA  Portfolio
